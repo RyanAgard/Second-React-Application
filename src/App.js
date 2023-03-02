@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { Link,Routes,Route } from "react-router-dom";
 import './App.css';
+import Traffic from "./components/Contact";
+import Home from"./components/Home";
+import Forecast from "./components/Forecast";
+import {useState} from "react"; 
+
 
 function App() {
+  const [location,setLocation]=useState('')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+ <div className = 'navbar'>
+   
+    <Link to ="/"><div>Home</div></Link>
+
+  
+    <Link to ="/Traffic"><div>Traffic</div></Link> 
+</div>
+
+  <Routes >
+       <Route path = "/" element ={<Home location={location} setLocation={setLocation} />} />  
+       <Route path = "/Forecast" element ={<Forecast  location={location} setLocation={setLocation}/>} />
+       <Route path = "/Traffic" element ={<Traffic />} />
+  </Routes>
+
+</>
+
+
+  
   );
 }
 
