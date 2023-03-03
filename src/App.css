@@ -56,6 +56,7 @@ h1 {
 }
 
 .home .search {
+  
   text-align: center;
   padding: 1rem;
 }
@@ -88,6 +89,8 @@ h1 {
 .home .top {
   width: 100%;
   margin: 1rem auto;
+  margin-top: 50px;
+  padding-left: 20px;
 }
 
 .home .description {
@@ -106,27 +109,55 @@ h1 {
   padding: 1rem;
   border-radius: 12px;
   background-color: rgba(255,255,255, 0.2);
+  margin-top: 650px;
   
 }
 
 .bold {
   font-weight: 700;
 }
+.text-link{
+  color: none;
+  text-decoration:none;
+}
+.navbar{
+ justify-content: center;
+ gap:1100px;
+ background: rgba(0, 0, 0, 0.9);
+ list-style: none;
+ text-transform: uppercase;
+
+
+}
+.Navfont{
+color: #f8f8f8;
+
+}
+.Forecast{
+font-size: 30px;
+display:flex;
+justify-content: center;
+
+}
+.Forecastfont{
+  color: #f8f8f8;
+  text-transform: uppercase;
+}
 
 .container1{
-display: flex;
+ display: grid;
 }
 .container2{
-  display: flex;
+  display: grid;
 }
 .container3{
-  display: flex;
+  display: grid;
 }
 .container4{
-  display: flex;
+  display: grid;
 }
 .container5{
-  display: flex;
+  display: grid;
 }
 
 

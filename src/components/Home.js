@@ -75,7 +75,7 @@ function Home({location,setLocation}) {
 
            {data.name!=undefined&&
              <div className = 'Forecast'>
-             <Link to ="/Forecast" ><div>Forecast</div></Link> 
+             <Link className ="text-link"to ={`/Forecast/${data.id}`} ><div className="Forecastfont">Forecast</div></Link> 
              </div> 
              }     
     </div>
