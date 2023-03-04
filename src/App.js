@@ -6,8 +6,12 @@ import {useState} from "react";
 import Contact from "./components/Contact";
 
 
-function App() {
+function App( ) {
   const [location,setLocation]=useState('')
+   
+    
+   
+  
   
   return (
 <>
@@ -21,7 +25,7 @@ function App() {
   <Routes >
        <Route path = "/" element ={<Home location={location} setLocation={setLocation} />} />  
        <Route path = "/Forecast/:id" element ={<Forecast  location={location} setLocation={setLocation}/>} />
-       <Route path = "/Contact" element ={<Contact />} />
+       <Route path = "/Contact" element ={<Contact/>} />
   </Routes>
 
 </>

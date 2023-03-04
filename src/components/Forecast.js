@@ -1,4 +1,3 @@
-
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -29,38 +28,56 @@ function Forecast ({location,setLocation}) {
 
  return (  
     <div className='forecast'>
-     
+    
+       
           <div className="container1">
-           <h1>Mon</h1>
-           {data.list&&<h1>{data.list[23].main.temp}°F</h1>}
-           {data.list&&<h1>min {data.list[23].main.temp_min}°F</h1>}
+            <div className="box1">
+           <h2>Mon</h2>
+           {data.list&&<h2>{data.list[23].main.temp}°F</h2>}
+           {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[23].weather[0].icon}@2x.png`} alt="icon"/> }
+           {data.list&&<p>min {data.list[23].main.temp_min}°F</p>}
            {/* <img>images</img> */}
-         
+           </div>
           </div>  
+
           <div className="container2">
-           <h1>Tue</h1>
-           {data.list&&<h1>{data.list[32].main.temp}°F</h1>}
-           {data.list&&<h1>min {data.list[32].main.temp_min}°F</h1>}
-        
+            <div className = "box2">
+           <h2>Tue</h2>
+           {data.list&&<h2>{data.list[32].main.temp}°F</h2>}
+           {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[32].weather[0].icon}@2x.png`} alt="icon"/> }
+           {data.list&&<p>min {data.list[32].main.temp_min}°F</p>}
+           </div>
           </div>
+
           <div className="container3">
-           <h1>Wed</h1>
-           {data.list&&<h1>{data.list[39].main.temp}°F</h1>}
-           {data.list&&<h1>min {data.list[39].main.temp_min}°F</h1>}
+            <div className = "box3">
+           <h2>Wed</h2>
+           {data.list&&<h2>{data.list[39].main.temp}°F</h2>}
+           {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[39].weather[0].icon}@2x.png`} alt="icon"/> }
+           {data.list&&<p>min {data.list[39].main.temp_min}°F</p>}
+           </div>
           </div>
+
           <div className="container4">
-           <h1>Thu</h1> 
-            {data.list&&<h1>{data.list[0].main.temp}°F</h1>}
-            {data.list&&<h1>min {data.list[0].main.temp_min}°F</h1>}
-           {/* <img>images</img> */}
+            <div className = "box4">
+           <h2>Thu</h2> 
+            {data.list&&<h2>{data.list[0].main.temp}°F</h2>}
+            {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`} alt="icon"/> }
+            {data.list&&<p>min {data.list[0].main.temp_min}°F</p>}
+            </div>
           </div>
+
           <div className="container5">
-           <h1>Fri</h1> 
-            {data.list&&<h1>{data.list[7].main.temp}°F</h1>}
-            {data.list&&<h1>min {data.list[7].main.temp_min}°F</h1>}
-           {/* <img>images</img> */}   
+
+           <div className = "box5">
+           <h2>Fri</h2> 
+            {data.list&&<h2>{data.list[7].main.temp}°F</h2>}
+            {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[7].weather[0].icon}@2x.png`} alt="icon"/> }
+            {data.list&&<p>min {data.list[7].main.temp_min}°F</p>} 
+            </div>
           </div>
-        </div>
+      </div>
+    
   
   );
 }
