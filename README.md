@@ -69,3 +69,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Second-React-Application
+
+## Weather App
+|Name       | Email           |
+|-----------|----------------------|
+|Ryan Agard | ryantagard@yahoo.com |
+
+
+# React Technologies Used
+useState 
+useEffect
+useParam
+useRef
+router
+# Weather App
+With this application using the seacrh bar and the power of the OpenWeather api the user will be able 
+to locate any form of weather data from anywhere around the world that being temp, min temps, humidity, wind speed and forecast
+for the next five day.There also a contact form for any future forecast warnings pending storms and more in your area near you
+# Challenges and Future Features
+Future features would be to make the weather App more in depth and flushed out giving weather and forecast more detailed information.
+has for the contact form it should be also finish and funtional soon. Currently per-loading is under development and is a 
+challenges. 
