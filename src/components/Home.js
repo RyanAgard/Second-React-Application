@@ -74,13 +74,13 @@ function Home({location,setLocation}) {
           </div>
            }
             
-           {data.name!=undefined&&
-             <div className = 'Forecast'>
+           {data.name!=undefined&&          
+           <div className = 'Forecast'>
              <Link className ="text-link"to ={`/Forecast/${data.id}`} ><div className="Forecastfont">Forecast</div></Link> 
              </div> 
-             }     
-    </div>
- </div>
+             }  
+             </div>     
+           </div>
 
  );
 }

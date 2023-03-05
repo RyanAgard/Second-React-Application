@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 function Contact() {
-    function Form({ addEmployee, setShowForm }) {
         let nameRef = useRef();
         let titleRef = useRef();
         let phoneRef = useRef();
@@ -22,33 +21,26 @@ function Contact() {
  
       
         } 
-
-      useEffect(()=>(
-            Form()
-          ),[])
-
-
         return (
+          <div className = "App">
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name</label>
+            <label className="name">Name</label>
             <input id="name" ref={nameRef} />
       
-            <label htmlFor="title">Title</label>
+            <label  className="title">Title</label>
             <input id="title" ref={titleRef} />
       
-            <label htmlFor="phone">Phone</label>
+            <label className="phone">Phone</label>
             <input id="phone" ref={phoneRef} />
       
-            <label htmlFor="email">Email</label>
+            <label className="email">Email</label>
             <input id="email" ref={emailRef} />
       
-            <button>Submit</button>
-          </form>
+            <button className="submit">Submit</button>
+           </form>   
+        </div>
         );
+
       }
-      
-   
-      
-}
 
 export default Contact;

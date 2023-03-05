@@ -35,8 +35,7 @@ function Forecast ({location,setLocation}) {
            <h2>Mon</h2>
            {data.list&&<h2>{data.list[23].main.temp}°F</h2>}
            {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[23].weather[0].icon}@2x.png`} alt="icon"/> }
-           {data.list&&<p>min {data.list[23].main.temp_min}°F</p>}
-           {/* <img>images</img> */}
+           {data.list&&<p>low {data.list[23].main.temp_min}°F</p>}
            </div>
           </div>  
 
@@ -45,7 +44,7 @@ function Forecast ({location,setLocation}) {
            <h2>Tue</h2>
            {data.list&&<h2>{data.list[32].main.temp}°F</h2>}
            {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[32].weather[0].icon}@2x.png`} alt="icon"/> }
-           {data.list&&<p>min {data.list[32].main.temp_min}°F</p>}
+           {data.list&&<p>low {data.list[32].main.temp_min}°F</p>}
            </div>
           </div>
 
@@ -54,7 +53,7 @@ function Forecast ({location,setLocation}) {
            <h2>Wed</h2>
            {data.list&&<h2>{data.list[39].main.temp}°F</h2>}
            {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[39].weather[0].icon}@2x.png`} alt="icon"/> }
-           {data.list&&<p>min {data.list[39].main.temp_min}°F</p>}
+           {data.list&&<p>low {data.list[39].main.temp_min}°F</p>}
            </div>
           </div>
 
@@ -63,7 +62,7 @@ function Forecast ({location,setLocation}) {
            <h2>Thu</h2> 
             {data.list&&<h2>{data.list[0].main.temp}°F</h2>}
             {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`} alt="icon"/> }
-            {data.list&&<p>min {data.list[0].main.temp_min}°F</p>}
+            {data.list&&<p>low {data.list[0].main.temp_min}°F</p>}
             </div>
           </div>
 
@@ -73,7 +72,7 @@ function Forecast ({location,setLocation}) {
            <h2>Fri</h2> 
             {data.list&&<h2>{data.list[7].main.temp}°F</h2>}
             {data.list&& <img src={`http://openweathermap.org/img/wn/${data.list[7].weather[0].icon}@2x.png`} alt="icon"/> }
-            {data.list&&<p>min {data.list[7].main.temp_min}°F</p>} 
+            {data.list&&<p>low {data.list[7].main.temp_min}°F</p>} 
             </div>
           </div>
       </div>
