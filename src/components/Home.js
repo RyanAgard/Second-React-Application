@@ -52,7 +52,7 @@ function Home({location,setLocation}) {
                  </div>
            </div>
           
-           {data.name!=undefined&&
+           {data.name!==undefined&&
              <div>
              <img  className ="icon" src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt="icon" height={200}/>
                 
@@ -74,7 +74,7 @@ function Home({location,setLocation}) {
           </div>
            }
             
-           {data.name!=undefined&&          
+           {data.name!==undefined&&          
            <div className = 'Forecast'>
              <Link className ="text-link"to ={`/Forecast/${data.id}`} ><div className="Forecastfont">Forecast</div></Link> 
              </div> 
