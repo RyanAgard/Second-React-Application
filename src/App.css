@@ -142,8 +142,6 @@ justify-content: center;
  text-transform: uppercase;
  justify-content: center;
 }
-
-
 .forecast{
  display: flex;
  justify-content:space-evenly;
@@ -152,9 +150,7 @@ justify-content: center;
  background-color: rgba(0,0,0,0.4);
  color: #fff; 
  background: url('./images/New York.jpg') no-repeat center center/cover;
-
 }
-
 .icon{
   margin-left: 100px;
   display: flex;
@@ -249,38 +245,80 @@ span:nth-of-type(2){
   100%{margin-top:0;}
 }
 .App{
-  height: 90vh;
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff; 
+  background: url('./images/Spring.jpg') no-repeat center center/cover;
 }
-
 form {
+ 
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 40px;
   margin-top: 50px;
   width: 100%;
+  height: 900px;
+  background-color: rgb(184, 203, 218);
 }
-
+.subForm{
+  display: flex;
+  justify-content:space-evenly;
+ 
+}
 form input {
   width: 50%;
   align-self: center;
 }
+.subForm .name{
+ padding: 20px;
+}
+.subForm .location {
+  padding: 20px;
+
+}
+.subForm .phone {
+  padding: 20px;
+
+}
+.subForm .email {
+  padding: 20px;
+
+}
 
 form label {
   align-self: center;
-  margin-top: 10px;
 }
-button.submit{
-  width: 50%;
-  margin-top: 100px;
+button.Submit{
+  margin-top: 50px;
   align-self: center;
-}
-.name {
+  width: 400px;
+  height: 50px;
+  background-color: rgb(90, 146, 168);
+  color:white;
 
 }
-.title {
-
-}
-.phone {
-
+.Form1{
+  height: 50%;
+  width: 50%;
 }
 
+input#name{
+  width: 400px;
+  height: 50px;
+ 
+}
+input#title{
+  width: 400px;
+  height: 50px;
+}
+input#phone{
+  width: 400px;
+  height: 50px;
+}
+input#email{
+  width: 400px;
+  height: 50px;
+}

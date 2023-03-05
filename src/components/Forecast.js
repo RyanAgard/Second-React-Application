@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-function Forecast ({location,setLocation}) {
+function Forecast ({setLocation}) { 
     const {id}=useParams()
     const [data,setData]=useState({})
     const key ='4ebfa68127b633eaddf769fa6f723811'
@@ -22,13 +22,15 @@ function Forecast ({location,setLocation}) {
       useEffect(()=>{
 
       Fetchforecast()
-    },);
+    },[]);
 
     //  console.log(data)
 
  return (  
+  
     <div className='forecast'>
-    
+
+  
        
           <div className="container1">
             <div className="box1">
@@ -76,9 +78,9 @@ function Forecast ({location,setLocation}) {
             </div>
           </div>
       </div>
-    
-  
+      
   );
+  
 }
-
+ 
 export default Forecast ;

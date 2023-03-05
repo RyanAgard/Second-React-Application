@@ -6,14 +6,16 @@ import {useState} from "react";
 import Contact from "./components/Contact";
 
 
-function App() {
-  const [location,setLocation]=useState('')
-  const [employees, setEmployees] = useState();
 
-  function addEmployee(emp) {
-    setEmployees([...employees, emp]);
+function App() {
+  const [location,setLocation]=useState('');
+  const [client, setClient] = useState();
+  
+
+  function addClient(cli) {
+    setClient([...client, cli]);
   }
-   
+  
   return (
 <>
  <div className = 'navbar'>
@@ -28,10 +30,15 @@ function App() {
 </div>
 
   <Routes >
+      
        <Route path = "/" element ={<Home location={location} setLocation={setLocation} />} />  
+     
        <Route path = "/Forecast/:id" element ={<Forecast  location={location} setLocation={setLocation}/>} />
-       <Route path = "/Contact" element ={<Contact employees={employees} addEmployee={addEmployee}/>} />
+     
+       <Route path = "/Contact" element ={<Contact employees={client} addEmployee={addClient}/>} />
+
   </Routes>
+  <div></div>
 
 </>
   );
