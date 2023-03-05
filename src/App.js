@@ -35,7 +35,7 @@ function App() {
      
        <Route path = "/Forecast/:id" element ={<Forecast  location={location} setLocation={setLocation}/>} />
      
-       <Route path = "/Contact" element ={<Contact employees={client} addEmployee={addClient}/>} />
+       <Route path = "/Contact" element ={<Contact client={client} addClient={addClient}/>} />
 
   </Routes>
   <div></div>
