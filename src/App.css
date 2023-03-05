@@ -121,13 +121,15 @@ h1 {
 }
 .navbar{
  justify-content: center;
- gap:1100px;
+ gap:1000px;
  background: rgba(0, 0, 0, 0.9);
  list-style: none;
  text-transform: uppercase;
 }
 .Navfont{
 color: #f8f8f8;
+
+
 }
 .Forecast{
   display: flex;
@@ -136,20 +138,20 @@ justify-content: center;
 
 }
 .Forecastfont{
-  color: #f8f8f8;
-  text-transform: uppercase;
-  justify-content: center;
+ color: #f8f8f8;
+ text-transform: uppercase;
+ justify-content: center;
 }
 
 
 .forecast{
-display: flex;
-justify-content:space-evenly;
-width: 100%;
-height: 100vh;
-background-color: rgba(0,0,0,0.4);
-color: #fff; 
-background: url('./images/New York.jpg') no-repeat center center/cover;
+ display: flex;
+ justify-content:space-evenly;
+ width: 100%;
+ height: 100vh;
+ background-color: rgba(0,0,0,0.4);
+ color: #fff; 
+ background: url('./images/New York.jpg') no-repeat center center/cover;
 
 }
 
@@ -162,13 +164,13 @@ background: url('./images/New York.jpg') no-repeat center center/cover;
 }
 .container1{
   position: relative;
-margin-top: 100px;
-color: rgb(0, 0, 0);
-background-color: #bebebe;
-height:215px;
-width: 180px;
-border-radius: 30px;
-opacity: 0.9;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  background-color: #bebebe;
+  height:215px;
+  width: 180px;
+  border-radius: 30px;
+  opacity: 0.9;
 }
 .box1 {
  text-align: center;
