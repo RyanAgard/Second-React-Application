@@ -22,7 +22,7 @@ function Forecast ({setLocation}) {
       useEffect(()=>{
 
       Fetchforecast()
-    },[]);
+    },);
 
     //  console.log(data)
 
