@@ -21,8 +21,8 @@ function Forecast ({setLocation}) {
       
       useEffect(()=>{
 
-      Fetchforecast()
-    },);
+       Fetchforecast()
+    },[]);
 
     //  console.log(data)
 
