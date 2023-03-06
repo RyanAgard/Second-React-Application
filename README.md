@@ -77,12 +77,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # React Technologies Used
-*useState 
-*useEffect
-*useParam
-*useRef
-*router
-*OpenWeather API
+* useState 
+* useEffect
+* useParam
+* useRef
+* router
+* OpenWeather API
 # Weather App
 With this application using the seacrh bar and the power of the OpenWeather api the user will be able 
 to locate any form of weather data from anywhere around the world that being temp, min temps, humidity, wind speed and forecast
